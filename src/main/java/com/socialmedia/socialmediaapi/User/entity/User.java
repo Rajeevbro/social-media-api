@@ -6,6 +6,8 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 import org.hibernate.annotations.Type;
 
+import java.util.List;
+
 @Entity
 @Data
 @AllArgsConstructor
@@ -19,6 +21,7 @@ public class User {
     private String lastName;
     private String  email;
     private String city;
+   private List<Long> postId;
     private String country;
 
 }
